@@ -38,7 +38,7 @@ body {
 .goods:hover {
   border: 0.15rem solid var(--cold-blue);
 }
-.goods .amount {
+.goods .show-amount {
   color: var(--cold-blue);
   font-weight: bolder;
   font-size: 0.8rem;
