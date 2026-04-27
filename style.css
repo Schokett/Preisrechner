@@ -13,7 +13,6 @@ body {
   gap: 1rem;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "main site";
-  background-color: #ffffff;
 }
 .main-container {
   grid-area: main;
@@ -32,11 +31,10 @@ body {
   background-color: rgb(248, 248, 248);
   border-radius: 0.5rem;
   border: solid 0.1rem rgb(175, 175, 175);
-
-  .amount {
-    color: #0078f6;
-    font-weight: bolder;
-  }
+}
+.goods .amount {
+  color: #0078f6;
+  font-weight: bolder;
 }
 .order-container {
   padding: 0 2rem 2rem 2rem;
@@ -45,8 +43,14 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 7px 1px;
 }
 .price-container {
+  font-weight: bold;
+  color: #5c5c5c;
   display: flex;
   justify-content: space-between;
+
+  .price {
+    color: #0078f6;
+  }
 }
 .mini-container {
   display: grid;
@@ -61,13 +65,13 @@ button {
 }
 .reset {
   grid-area: reset;
-  background-color: red;
+  background-color: rgb(228, 91, 91);
   padding: 1rem;
 }
 .where {
   grid-area: where;
   padding: 1rem;
-  background-color: rgb(1, 230, 1);
+  background-color: rgb(95, 197, 95);
 }
 .delievery {
   grid-area: delievery;
