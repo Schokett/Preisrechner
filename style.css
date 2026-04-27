@@ -1,33 +1,76 @@
 body {
   background: rgb(252, 252, 252);
 }
+.frame {
+  margin: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 .price-calculator {
-  width: 60rem;
+  width: 50rem;
   display: grid;
+  gap: 1rem;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "main site";
   background-color: #ffffff;
-  border: solid 0.1rem gray;
-  border-radius: 1rem;
 }
 .main-container {
   grid-area: main;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  padding: 0 2rem 2rem 2rem;
 }
-.good-container {
+.goods-container {
+  gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "goods goods goods goods" "goods goods goods goods" "goods goods goods goods";
+  text-align: center;
 }
 .goods {
-  grid-area: "goods";
-  width: 7rem;
-  height: 3rem;
+  font-size: 0.7rem;
+  background-color: rgb(248, 248, 248);
+  border-radius: 0.5rem;
   border: solid 0.1rem rgb(175, 175, 175);
+
+  .amount {
+    color: #0078f6;
+    font-weight: bolder;
+  }
 }
 .order-container {
+  padding: 0 2rem 2rem 2rem;
   grid-area: site;
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 7px 1px;
 }
 .price-container {
   display: flex;
   justify-content: space-between;
+}
+.mini-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "reset reset" "where delievery";
+  gap: 0.5rem;
+}
+button {
+  color: #f3f3f3;
+  border: 0.01rem solid rgb(204, 204, 204);
+  border-radius: 0.5rem;
+}
+.reset {
+  grid-area: reset;
+  background-color: red;
+  padding: 1rem;
+}
+.where {
+  grid-area: where;
+  padding: 1rem;
+  background-color: rgb(1, 230, 1);
+}
+.delievery {
+  grid-area: delievery;
+  padding: 1rem;
+  background-color: rgb(41, 106, 226);
 }
