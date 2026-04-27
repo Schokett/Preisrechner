@@ -13,6 +13,17 @@ body {
 .main-container {
   grid-area: main;
 }
+.good-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "goods goods goods goods" "goods goods goods goods" "goods goods goods goods";
+}
+.goods {
+  grid-area: "goods";
+  width: 7rem;
+  height: 3rem;
+  border: solid 0.1rem rgb(175, 175, 175);
+}
 .order-container {
   grid-area: site;
 }
