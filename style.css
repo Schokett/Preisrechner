@@ -1,6 +1,9 @@
 body {
   background: rgb(252, 252, 252);
 }
+:root {
+  --cold-blue: #3d8ee6;
+}
 .frame {
   margin: 2rem;
   align-items: center;
@@ -8,10 +11,10 @@ body {
   flex-direction: column;
 }
 .price-calculator {
-  width: 50rem;
+  width: 55rem;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   grid-template-areas: "main site";
 }
 .main-container {
@@ -30,11 +33,15 @@ body {
   font-size: 0.7rem;
   background-color: rgb(248, 248, 248);
   border-radius: 0.5rem;
-  border: solid 0.1rem rgb(175, 175, 175);
+  border: solid 0.15rem rgb(175, 175, 175);
+}
+.goods:hover {
+  border: 0.15rem solid var(--cold-blue);
 }
 .goods .amount {
-  color: #0078f6;
+  color: var(--cold-blue);
   font-weight: bolder;
+  font-size: 0.8rem;
 }
 .order-container {
   padding: 0 2rem 2rem 2rem;
@@ -49,7 +56,7 @@ body {
   justify-content: space-between;
 
   .price {
-    color: #0078f6;
+    color: var(--cold-blue);
   }
 }
 .mini-container {
@@ -76,5 +83,8 @@ button {
 .delievery {
   grid-area: delievery;
   padding: 1rem;
-  background-color: rgb(41, 106, 226);
+  background-color: var(--cold-blue);
+}
+.text {
+  cursor: pointer;
 }
