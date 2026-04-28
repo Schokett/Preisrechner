@@ -28,6 +28,7 @@ function displayPrice(totalPrice) {
 
   element.innerHTML = totalPrice.toFixed(2) + "<span>&#8364;</span>";
 }
+
 //Produkt und Preis Liste
 function displayGoods(price, product) {
   const container = document.getElementById("cart-container");
@@ -52,6 +53,7 @@ function resetButton(totalPrice) {
     total.innerHTML = `0,00 <span>&#8364;</span>`;
   }
 }
+
 function whereButton(totalPrice) {
   const container = document.getElementById("cart-container");
   const total = document.getElementById("price");
@@ -73,6 +75,4 @@ function delieveryButton(totalPrice) {
     container.innerHTML = "";
     total.innerHTML = `0,00 <span>&#8364;</span>`;
   }
-
-  //   alert("Bestellung für Vor Ort abgeschlossen! Gesamtbetrag: " + totalPrice + "€");
 }
