@@ -70,9 +70,9 @@ function delieveryButton(totalPrice) {
   } else {
     totalPrice += 2.5;
     alert("Bestellung für Lieferung abgeschlossen!. Gesamtbetrag: " + totalPrice.toFixed(2) + "€");
+    container.innerHTML = "";
+    total.innerHTML = `0,00 <span>&#8364;</span>`;
   }
 
   //   alert("Bestellung für Vor Ort abgeschlossen! Gesamtbetrag: " + totalPrice + "€");
-  container.innerHTML = "";
-  total.innerHTML = `0,00 <span>&#8364;</span>`;
 }
