@@ -15,26 +15,18 @@ function selectItems(index) {
 
   totalPrice += price;
 
-  //   console.log(price);
-  //   console.log(totalPrice);
-  //   console.log("Ausgewählt: " + price.toFixed(2) + "€");
-  //   console.log("Neue totalPrice: " + totalPrice.toFixed(2) + "€");
-
   //holt nur den Namen
   const element2 = document.getElementsByClassName("text");
   const fullText = element2[index].innerText;
   const product = fullText.split("\n")[0];
-  //   console.log(product);
 
   displayPrice(totalPrice);
   displayGoods(price, product);
   //   const price = element[index].innerText;
-  //   console.log(price);
 
   //   //holt Text und price
   //   //   const element2 = document.getElementsByClassName("text");
   //   //   const product = element2[index].innerText;
-  //   //   console.log(product);
 }
 
 function displayPrice(totalPrice) {
@@ -42,17 +34,17 @@ function displayPrice(totalPrice) {
   let total = element.getAttribute("value");
 
   element.innerHTML = totalPrice.toFixed(2) + "<span>&#8364;</span>";
-  //   console.log(totalPrice);
 }
 
 function displayGoods(price, product) {
-  const goodsElement = document.getElementById("goods-cart");
-  const priceElement = document.getElementById("price-cart");
+  const container = document.getElementById("cart-container");
 
-  //   console.log("bin verbunden " + product + " " + price);
-
-  goodsElement.innerHTML = product;
-  priceElement.innerHTML = price + "<span>&#8364;</span>" + "<hr />";
-
-  console.log(goodsElement, priceElement);
+  const htmlSnippet = `
+    <div class="shopping-cart">
+      <span class="shopping-cart-goods">${product}</span>
+      <span class="shopping-cart-price">${price.toFixed(2)}<span>€</span></span>
+      <hr />
+    </div>
+  `;
+  container.innerHTML += htmlSnippet;
 }
