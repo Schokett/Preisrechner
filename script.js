@@ -1,33 +1,31 @@
-// let totaPrice = 0;
+let totalPrice = 0;
 
-// function selectItems(index) {
-//   //holt nur Preis
-//   const elemente = document.getElementsByClassName("show-amount");
+function selectItems(index) {
+  //holt nur price
+  const elemente = document.getElementsByClassName("show-amount");
 
-//   let preisAlsText = elemente[index].getAttribute("value");
+  let priceAsText = elemente[index].getAttribute("value");
 
-//   let preisAlsZahl = preisAlsText.replace(",", ".");
+  let priceAsNumber = priceAsText.replace(",", ".");
 
-//   let preis = parseFloat(preisAlsZahl);
+  let price = parseFloat(priceAsNumber);
 
-//   totaPrice = totaPrice + preis;
+  totalPrice += price;
 
-//   console.log("Ausgewählt: " + preis.toFixed(2) + "€");
-//   console.log("Neue totaPrice: " + totaPrice.toFixed(2) + "€");
+  console.log("Ausgewählt: " + price.toFixed(2) + "€");
+  console.log("Neue totalPrice: " + totalPrice.toFixed(2) + "€");
 
-//   //   const price = element[index].innerText;
-//   //   console.log(price);
+  //   const price = element[index].innerText;
+  //   console.log(price);
 
-//   //holt nur den Namen
-//   //   const element2 = document.getElementsByClassName("text");
-//   //   const fullText = element2[index].innerText;
-//   //   const product = fullText.split("\n")[0];
-//   //   console.log(product);
+  //holt nur den Namen
+  //   const element2 = document.getElementsByClassName("text");
+  //   const fullText = element2[index].innerText;
+  //   const product = fullText.split("\n")[0];
+  //   console.log(product);
 
-//   //holt Text und Preis
-//   //   const element2 = document.getElementsByClassName("text");
-//   //   const product = element2[index].innerText;
-//   //   console.log(product);
-// }
-
-//eigene Lösung:
+  //   //holt Text und price
+  //   //   const element2 = document.getElementsByClassName("text");
+  //   //   const product = element2[index].innerText;
+  //   //   console.log(product);
+}
