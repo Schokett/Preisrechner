@@ -8,78 +8,199 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="frame">
+      <section class="price-calculator">
+        <div class="main-container">
+          <h1 class="header">Preisrechner</h1>
+          <div class="goods-container">
+            <div class="goods" onclick="selectItems(0)">
+              <p class="text">
+                Matcha Tee
+                <br />
+                <span class="show-amount" value="3,50" id="amount1">
+                  3,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(1)">
+              <p class="text">
+                Sencha
+                <br />
+                <span class="show-amount" value="3,00">
+                  3,00
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(2)">
+              <p class="text">
+                Ramune
+                <br />
+                <span class="show-amount" value="3,80">
+                  3,80
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(3)">
+              <p class="text">
+                Mugicha
+                <br />
+                <span class="show-amount" value="3,50">
+                  3,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(4)">
+              <p class="text">
+                Ramen
+                <br />
+                <span class="show-amount" value="12,50">
+                  12,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(5)">
+              <p class="text">
+                Gyoza (6 Stk.)
+                <br />
+                <span class="show-amount" value="5,90">
+                  5,90
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(6)">
+              <p class="text">
+                Takoyaki
+                <br />
+                <span class="show-amount" value="6,50">
+                  6,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(7)">
+              <p class="text">
+                Yakitori
+                <br />
+                <span class="show-amount" value="4,50">
+                  4,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(8)">
+              <p class="text">
+                Okonomiyaki
+                <br />
+                <span class="show-amount" value="9,80">
+                  9,80
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(9)">
+              <p class="text">
+                Karaage
+                <br />
+                <span class="show-amount" value="6,20">
+                  6,20
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(10)">
+              <p class="text">
+                Miso Suppe
+                <br />
+                <span class="show-amount" value="3,50">
+                  3,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(11)">
+              <p class="text">
+                Onigiri
+                <br />
+                <span class="show-amount" value="2,80">
+                  2,80
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(12)">
+              <p class="text">
+                Mochi Ice
+                <br />
+                <span class="show-amount" value="4,20">
+                  4,20
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(13)">
+              <p class="text">
+                Dorayaki
+                <br />
+                <span class="show-amount" value="3,50">
+                  3,50
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(14)">
+              <p class="text">
+                Taiyaki
+                <br />
+                <span class="show-amount" value="4,00">
+                  4,00
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+            <div class="goods" onclick="selectItems(15)">
+              <p class="text">
+                Melonpan
+                <br />
+                <span class="show-amount" value="3,20">
+                  3,20
+                  <span>&#8364;</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="action-container">
+            <div class="price-container">
+              <p class="header">Gesamt</p>
+              <span class="price" id="price" value="0">
+                0,00
+                <span>&#8364;</span>
+              </span>
+            </div>
+            <div class="mini-container">
+              <button class="reset">Zurücksetzen</button>
+              <button class="where">Vor Ort</button>
+              <button class="delievery">Lieferung</button>
+            </div>
+          </div>
+        </div>
+        <div class="order-container">
+          <h3 class="header order">Bestellung</h3>
 
-   <div class="frame">
-   <section class="price-calculator">
-   <div class="main-container">
-      <h1 class="header">Preisrechner</h1>
-      <div class="goods-container">
-        <div class="goods" onclick="selectItems(0)">
-         <p class="text">Matcha Tee <br><span class="show-amount" value="3,50" id="amount1">3,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(1)">
-            <p class="text">Sencha<br><span class="show-amount" value="3,00">3,00<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(2)">
-            <p class="text">Ramune<br><span class="show-amount" value="3,80">3,80<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(3)">
-            <p class="text">Mugicha<br><span class="show-amount" value="3,50">3,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(4)">
-            <p class="text">Ramen<br><span class="show-amount" value="12,50">12,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(5)">
-            <p class="text">Gyoza (6 Stk.)<br><span class="show-amount" value="5,90">5,90<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(6)">
-            <p class="text">Takoyaki<br><span class="show-amount" value="6,50">6,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(7)">
-            <p class="text">Yakitori<br><span class="show-amount" value="4,50">4,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(8)">
-            <p class="text">Okonomiyaki<br><span class="show-amount" value="9,80">9,80<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(9)">
-            <p class="text">Karaage<br><span class="show-amount" value="6,20">6,20<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(10)">
-            <p class="text">Miso Suppe<br><span class="show-amount" value="3,50">3,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(11)">
-            <p class="text">Onigiri<br><span class="show-amount" value="2,80">2,80<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(12)">
-            <p class="text">Mochi Ice<br><span class="show-amount" value="4,20">4,20<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(13)">
-            <p class="text">Dorayaki<br><span class="show-amount" value="3,50">3,50<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(14)">
-            <p class="text">Taiyaki<br><span class="show-amount" value="4,00">4,00<span>&#8364;</span></span></p>
-         </div>
-         <div class="goods" onclick="selectItems(15)">
-            <p class="text">Melonpan<br><span class="show-amount" value="3,20">3,20<span>&#8364;</span></span></p>
-         </div>
-         </div>
-      <hr />
-      <div class="action-container">
-         <div class="price-container">
-            <p class="header">Gesamt</p>
-            <p class="price" value="0">0,00 <span>&#8364</span></p>
-         </div>
-         <div class="mini-container">
-            <button class="reset">Zurücksetzen</button>
-            <button class="where">Vor Ort</button>
-            <button class="delievery">Lieferung</button>
-         </div>
-      </div>
-   </div>
-   <div class="order-container">
-      <h3 class="header order">Bestellung</h3>
-   </div>
-</section>
-</div>
+          <div class="shopping-cart">
+            <span class="shopping-cart-goods">Test</span>
+            <span class="shopping-cart-price">0</span>
+            <span>&#8364;</span>
+          </div>
+          <hr />
+        </div>
+      </section>
+    </div>
   </body>
 </html>
