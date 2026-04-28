@@ -41,7 +41,7 @@ function displayGoods(price, product) {
 
   const htmlSnippet = `
     <div class="shopping-cart">
-      <span class="shopping-cart-goods">${product}</span>
+      <span class="shopping-cart-goods">${product}:</span>
       <span class="shopping-cart-price">${price.toFixed(2)}<span>€</span></span>
       <hr />
     </div>
