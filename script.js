@@ -60,3 +60,19 @@ function whereButton(totalPrice) {
   container.innerHTML = "";
   total.innerHTML = `0,00 <span>&#8364;</span>`;
 }
+
+function delieveryButton(totalPrice) {
+  const container = document.getElementById("cart-container");
+  const total = document.getElementById("price");
+
+  if (totalPrice < 20) {
+    alert("Mindestbestellwert für Lieferung: 20,00€. Aktueller Betrag: " + totalPrice + "€");
+  } else {
+    totalPrice += 2.5;
+    alert("Bestellung für Lieferung abgeschlossen!. Gesamtbetrag: " + totalPrice.toFixed(2) + "€");
+  }
+
+  //   alert("Bestellung für Vor Ort abgeschlossen! Gesamtbetrag: " + totalPrice + "€");
+  container.innerHTML = "";
+  total.innerHTML = `0,00 <span>&#8364;</span>`;
+}
