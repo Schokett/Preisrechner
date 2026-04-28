@@ -22,13 +22,13 @@ function selectItems(index) {
 }
 
 //Gesamten Preis anzeigen
-function displayPrice(totalPrice) {
+function displayPrice() {
   const element = document.getElementById("price");
   let total = element.getAttribute("value");
 
   element.innerHTML = totalPrice.toFixed(2) + "<span>&#8364;</span>";
 }
-
+console.log(totalPrice);
 //Produkt und Preis Liste
 function displayGoods(price, product) {
   const container = document.getElementById("cart-container");
@@ -44,26 +44,28 @@ function displayGoods(price, product) {
 }
 
 //Zurücksetzen Button
-function resetButton(totalPrice) {
+function resetButton() {
   const container = document.getElementById("cart-container");
   const total = document.getElementById("price");
 
   if (totalPrice > 0) {
     container.innerHTML = "";
     total.innerHTML = `0,00 <span>&#8364;</span>`;
+    totalPrice = 0;
   }
 }
 
-function whereButton(totalPrice) {
+function whereButton() {
   const container = document.getElementById("cart-container");
   const total = document.getElementById("price");
 
   alert("Bestellung für Vor Ort abgeschlossen! Gesamtbetrag: " + totalPrice + "€");
   container.innerHTML = "";
   total.innerHTML = `0,00 <span>&#8364;</span>`;
+  totalPrice = 0;
 }
 
-function delieveryButton(totalPrice) {
+function delieveryButton() {
   const container = document.getElementById("cart-container");
   const total = document.getElementById("price");
 
@@ -74,5 +76,6 @@ function delieveryButton(totalPrice) {
     alert("Bestellung für Lieferung abgeschlossen!. Gesamtbetrag: " + totalPrice.toFixed(2) + "€");
     container.innerHTML = "";
     total.innerHTML = `0,00 <span>&#8364;</span>`;
+    totalPrice = 0;
   }
 }
