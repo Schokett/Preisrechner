@@ -46,5 +46,13 @@ function displayPrice(totalPrice) {
 }
 
 function displayGoods(price, product) {
-  console.log("bin verbunden " + product + " " + price);
+  const goodsElement = document.getElementById("goods-cart");
+  const priceElement = document.getElementById("price-cart");
+
+  //   console.log("bin verbunden " + product + " " + price);
+
+  goodsElement.innerHTML = product;
+  priceElement.innerHTML = price + "<span>&#8364;</span>" + "<hr />";
+
+  console.log(goodsElement, priceElement);
 }
