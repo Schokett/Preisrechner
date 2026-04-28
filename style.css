@@ -57,6 +57,7 @@ body {
 
   .price {
     color: var(--cold-blue);
+    display: inline-flex;
   }
 }
 .mini-container {
