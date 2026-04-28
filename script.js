@@ -52,3 +52,11 @@ function resetButton(totalPrice) {
     total.innerHTML = `0,00 <span>&#8364;</span>`;
   }
 }
+function whereButton(totalPrice) {
+  const container = document.getElementById("cart-container");
+  const total = document.getElementById("price");
+
+  alert("Bestellung für Vor Ort abgeschlossen! Gesamtbetrag: " + totalPrice + "€");
+  container.innerHTML = "";
+  total.innerHTML = `0,00 <span>&#8364;</span>`;
+}
